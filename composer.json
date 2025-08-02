@@ -1,0 +1,36 @@
+{
+    "name": "matusstafura/magento2-vatid-validation",
+    "description": "Vat Id input validation for Magento 2",
+    "type": "magento2-module",
+    "license": "MIT",
+    "keywords": [
+        "magento2",
+        "magento",
+        "checkout",
+        "validation",
+        "vat id",
+        "customer",
+        "form",
+        "module"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "MatusStafura\\VatIdValidation\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name": "Matus Stafura",
+            "homepage": "https://stafura.dev/"
+        }
+    ],
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.1",
+        "magento/framework": "^103.0.1"
+    }
+}
