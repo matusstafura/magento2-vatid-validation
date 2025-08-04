@@ -65,6 +65,12 @@ define(['jquery', 'mage/translate'], function ($) {
         validator.addRule(
             'vat_id_validation',
             function (value) {
+                const isEnabled = window.checkoutConfig.vatIdValidation === true;
+
+                if (!isEnabled) {
+                    return true;
+                }
+
                 if (value === '') return true;
 
                 const country = $('select[name="country_id"]').val();
